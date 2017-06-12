@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    android:layout_height="125dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rockstar"
+            android:layout_gravity="center_vertical"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+           android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+           <TextView
+               android:layout_marginLeft="10dp"
+               android:id="@+id/text1"
+               android:maxLines="1"
+               android:ellipsize="end"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="HELLO HELLO HELL"
+               style="@style/Base.TextAppearance.AppCompat.Large"/>
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18 Hours Ago"
+                android:gravity="center_vertical"
+                android:drawablePadding="0dp"
+                android:drawableStart="@drawable/time"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textSize="16dp"
+                android:text="hai this song is detecated to all andriod application user"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
